@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Job;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -18,9 +19,10 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         User::factory()->create([
-            'first_name' => 'Test',
-            'last_name' => 'User',
-            'email' => 'test@example.com',
+            'first_name' => 'Ibrahim',
+            'last_name' => 'Khan',
+            'email' => 'ibrahim@example.com',
         ]);
+        Job::factory(50)->create();
     }
 }
